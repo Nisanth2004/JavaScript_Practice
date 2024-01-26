@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+    
+
+<script>
+        let dayname=prompt("Enter the Day Number");
+        switch(dayname)
+        {
+            case '1':
+                dayname="Sunday";
+                break;
+            case '2':
+                dayname="Monday";
+                break;
+            case '3':
+                dayname="Tuesday";
+                break;
+            case '4':
+                dayname="Wednesay";
+                break;   
+            case '5':
+                dayname="Thursday";
+                break;
+            case '6':
+                dayname="Friday";
+                break;
+            case '7':
+                dayname="Saturday";
+                break;
+
+            default:
+                dayname="Invalid Number";
+                break;
+            
+        }
+        console.log("The day is:  "+dayname);
+</script>
+</body>
+</html>
