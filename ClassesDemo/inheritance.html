@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Inheritance Demo
+        class Person
+        {
+            constructor(name)
+            {
+                this.name=name;
+            }
+            greet()
+            {
+                console.log( "Hi this is Java world "+this.name);
+            }
+        }
+ class Student extends Person
+ {
+ // inherit all the methods in Person Class
+ constructor(name)
+ {
+    super(name);
+ }
+ }
+   
+    const student1=new  Student("Peter");
+
+   student1.greet();
+ 
+
+    </script>
+</body>
+</html>

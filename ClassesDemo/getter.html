@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class ClassDemo
+        {
+            constructor(name,age)
+            {
+                this.name=name;
+            this.age=age;
+            }
+            // getter
+           get greet()
+            {
+                return "Hello "+this.name
+            }
+        }
+
+        const person1=new ClassDemo("Sujith Selvaraj",21);
+        console.log(person1.greet);
+
+    </script>
+</body>
+</html>

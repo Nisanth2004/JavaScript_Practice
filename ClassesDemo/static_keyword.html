@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static method</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name)
+            {
+                this.name=name;
+            }
+            static greet()
+            {
+                console.log("hello!");
+            }
+        }
+
+        // creating a object to call func
+        const person1=new Person("Nisanth");
+     //   person1.greet();
+     
+     // TypeError: person1.greet is not a function. 
+        //(In 'person1.greet()', 'person1.greet' is undefined)
+
+        // It is static method so use classname to call the method
+
+        Person.greet();
+    </script>
+</body>
+</html>
