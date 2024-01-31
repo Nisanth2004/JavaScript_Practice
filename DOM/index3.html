@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <p class="text">Welcome to Bommanapadi 1</p>
+        <p class="second">Welcome to Bommanapadi 2</p>
+        <p class="text">Welcome to Bommanapadi 3</p>
+        <p class="text">Welcome to Bommanapadi 4</p>
+
+    </div>
+
+    <script>
+        // get te parent node
+        let txt=document.querySelector(".text");
+        console.log(txt.parentNode)
+
+        // get child elemt
+        let parent=document.querySelector(".title");
+        console.log(parent.firstElementChild);
+
+        // get all child elements 
+        let parent1=document.querySelector(".title");
+        console.log(parent1.childElementCount);
+
+        // previsous and after sibling
+        let second=document.querySelector(".second");
+        console.log(second.previousElementSibling);
+
+    </script>
+</body>
+</html>
