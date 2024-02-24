@@ -3,55 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="demo.js"></script>
-    <link rel="stylesheet" href="layout.css">
-  </style>
-    <title>Simple Calculator</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Simple Calculator </h2>
-    <div class="calc_form">
-        <form action="" name="form1">
-            <input id="calc" type="text" name="results">
-            <br>
-            <br>
-
-            <input type="button" value="1" onclick="form1.results.value=form1.results.value+'1'">
-            <input type="button" value="2" onclick="form1.results.value=form1.results.value+'2'">
-            <input type="button" value="3" onclick="form1.results.value=form1.results.value+'3'">
-            <input type="button" value="+" onclick="form1.results.value=form1.results.value+ '+'">
-            <br>
-            <br>
-
-            <input type="button" value="4" onclick="form1.results.value=form1.results.value+'4'">
-            <input type="button" value="5" onclick="form1.results.value=form1.results.value+'5'"> 
-            <input type="button" value="6" onclick="form1.results.value=form1.results.value+'6'"> 
-            <input type="button" value="-" onclick="form1.results.value=form1.results.value+'-'">
-            <br>
-            <br>
-
-            <input type="button" value="7" onclick="form1.results.value=form1.results.value+'7'">
-            <input type="button" value="8" onclick="form1.results.value=form1.results.value+'8'"> 
-            <input type="button" value="9" onclick="form1.results.value=form1.results.value+'9'"> 
-            <input type="button" value="*" onclick="form1.results.value=form1.results.value+'*'">
-            <br>
-            <br>
-
-            <input type="button" value="0" onclick="form1.results.value=form1.results.value+'0'">
-            <input type="button" value="." onclick="form1.results.value=form1.results.value+'.'"> 
-            <input type="button" id="equal" value="=" onclick="form1.results.value=eval(form1.results.value)"> 
-            <input type="button" value="/" onclick="form1.results.value=form1.results.value+'/'">
-            <br>
-            <br>
-            <input type="button" value="%" onclick="form1.results.value=form1.results.value+'%'">
-            <input type="button"  id="btn" value="CLR" onclick="form1.results.value=''">
+    <div id="calculator">
+        <input id="display" readonly type="text">
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearToDisplay()" class="operator-btn">C</button>
 
 
-
-
-
-        </form>
+        </div>
     </div>
 
+    <script src="index.js"></script>
 </body>
 </html>
